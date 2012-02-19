@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Rock, Paper, Scissors</title>
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+
+<div class="topbar" data-scrollspy="scrollspy">
+      <div class="topbar-inner">
+        <div class="container">
+          <a class="brand" href="#">Rock, Paper, Scissors</a>
+        </div>
+      </div>
+    </div>
+
+
+ <div class="container">
+    <div class="content">
+		
+		<p><a href="/play?guess=r&encoded=<%= @encoded %>" class="btn btn-primary">Rock</a></p>
+		<p><a href="/play?guess=p&encoded=<%= @encoded %>" class="btn btn-primary">Paper</a></p>
+		<p><a href="/play?guess=s&encoded=<%= @encoded %>" class="btn btn-primary">Scissors</a></p>
+
+	<p><small>&copy; 2012 Stewart Marketing LLC.  All rights reserved.</small></p>
+    </div>
+  </div>
+
+</body>
+</html> 

@@ -10,7 +10,7 @@
 <div class="topbar" data-scrollspy="scrollspy">
       <div class="topbar-inner">
         <div class="container">
-          <a class="brand" href="#">Rock, Paper, Scissors</a>
+          <a class="brand" href="/">Rock, Paper, Scissors</a>
         </div>
       </div>
     </div>
@@ -18,14 +18,24 @@
 
  <div class="container">
     <div class="content">
-		
-		<p><a href="/play?guess=r&encoded=<%= @encoded %>" class="btn btn-primary">Rock</a></p>
-		<p><a href="/play?guess=p&encoded=<%= @encoded %>" class="btn btn-primary">Paper</a></p>
-		<p><a href="/play?guess=s&encoded=<%= @encoded %>" class="btn btn-primary">Scissors</a></p>
+
+		<p><a href="/play?guess=rock&encoded=<%= @encoded %>" class="btn btn-primary">Rock</a></p>
+		<p><a href="/play?guess=paper&encoded=<%= @encoded %>" class="btn btn-primary">Paper</a></p>
+		<p><a href="/play?guess=scissors&encoded=<%= @encoded %>" class="btn btn-primary">Scissors</a></p>
+
+<p></p>
+<%= @score.inspect %>
+<p></p>
+
+<% @history.keys.each do |key| %>
+  <%= key %> => <%= @history[key].inspect %><br>
+<% end %>
+<p></p>
+
 
 	<p><small>&copy; 2012 Stewart Marketing LLC.  All rights reserved.</small></p>
     </div>
   </div>
 
 </body>
-</html> 
+</html>
